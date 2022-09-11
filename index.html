@@ -150,6 +150,79 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/11/%E6%B8%85%E9%99%A4%E4%BB%BB%E5%8A%A1%E6%A0%8F%E6%AE%8B%E7%95%99%E5%9B%BE%E6%A0%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daiiiiiiiiiii">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小戴的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/11/%E6%B8%85%E9%99%A4%E4%BB%BB%E5%8A%A1%E6%A0%8F%E6%AE%8B%E7%95%99%E5%9B%BE%E6%A0%87/" class="post-title-link" itemprop="url">清除任务栏残留图标</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-09-11 21:00:47 / 修改时间：21:09:59" itemprop="dateCreated datePublished" datetime="2022-09-11T21:00:47+08:00">2022-09-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="清除【选择哪些图标显示在任务栏上】内的已删除图标"><a href="#清除【选择哪些图标显示在任务栏上】内的已删除图标" class="headerlink" title="清除【选择哪些图标显示在任务栏上】内的已删除图标"></a>清除【选择哪些图标显示在任务栏上】内的已删除图标</h3><p>我们在卸载完软件后，总会有一些残留比如在【选择哪些图标显示在任务栏上】这个地方</p>
+<p>我们可以执行以下内容 复制到记事本将后缀改为bat</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKCR\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify&quot; /v &quot;IconStreams&quot; /f </span><br><span class="line">reg delete &quot;HKCR\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify&quot; /v &quot;PromotedIconCache&quot; /f</span><br><span class="line">taskkill /f /im explorer.exe &amp;&amp; explorer.exe</span><br></pre></td></tr></table></figure>
+
+<p>即可卸载</p>
+<p>注：使用此方法删除注册表时，<strong style="color:red;">会删除非系统自带软件图标</strong>【重启软件就可以重新显示】</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/10/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E5%8F%8A%E7%83%AD%E5%B8%96%E6%8E%92%E8%A1%8C%E6%A8%A1%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -871,87 +944,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/09/%E8%87%AA%E7%94%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Daiiiiiiiiiii">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小戴的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/09/%E8%87%AA%E7%94%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">自用环境配置</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-09-09 22:43:00" itemprop="dateCreated datePublished" datetime="2022-09-09T22:43:00+08:00">2022-09-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-09-10 00:58:31" itemprop="dateModified" datetime="2022-09-10T00:58:31+08:00">2022-09-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">日常学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p> 前几天没留神，下资源的时候被p2p下崽器心态搞崩了，于是乎我就决定重装一下电脑，可是配置环境还是挺费事的，所以我就在这自留一份，等用得着的时候直接拿来用</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/09/09/%E8%87%AA%E7%94%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1021,7 +1013,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
